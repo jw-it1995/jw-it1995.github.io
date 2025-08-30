@@ -35,15 +35,29 @@
       padding-bottom: 5px;
     }
     ul {
-      list-style-type: square;
-      margin-left: 20px;
+      list-style-type: none;
+      padding: 0;
     }
-    a {
-      color: #2980b9;
+    li {
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #2980b9;
+      color: #fff;
+      border-radius: 6px;
       text-decoration: none;
+      font-size: 0.95em;
+      transition: background 0.3s ease;
     }
-    a:hover {
-      text-decoration: underline;
+    .btn:hover {
+      background: #1f6391;
+    }
+    .description {
+      font-size: 0.9em;
+      color: #555;
+      margin: 6px 0 0 0;
     }
   </style>
 </head>
@@ -57,13 +71,16 @@
     <h2>Projects</h2>
     <ul>
       <li>
-        <a href="Desktop-Migration-Proposal.docx" target="_blank">Desktop Migration Proposal (DOCX)</a>
+        <a href="Desktop-Migration-Proposal.docx" target="_blank" class="btn">Desktop Migration Proposal (DOCX)</a>
+        <p class="description">Planned and documented a desktop migration strategy including hardware requirements and deployment steps.</p>
       </li>
       <li>
-        <a href="SupportQueueCaseStudyProject3.pptx" target="_blank">Help Desk Troubleshooting Case Study (PPTX)</a>
+        <a href="SupportQueueCaseStudyProject3.pptx" target="_blank" class="btn">Help Desk Troubleshooting Case Study (PPTX)</a>
+        <p class="description">Applied CompTIA’s 6-step troubleshooting process to real-world support tickets with clear resolutions.</p>
       </li>
       <li>
-        <a href="#" target="_blank">IPv6 Configuration Lab (Simulation Overview)</a>
+        <a href="#" target="_blank" class="btn">IPv6 Configuration Lab (Simulation Overview)</a>
+        <p class="description">Configured and verified IPv6 addressing in a lab environment using uCertify simulation tools.</p>
       </li>
     </ul>
   </section>
