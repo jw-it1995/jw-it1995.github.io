@@ -4,6 +4,19 @@ This project demonstrates my hands-on experience setting up and using **Security
 
 ---
 
+## 🖥️ Lab Environment
+- **Host Machine:** Windows 11 Pro, Intel i7, 16 GB RAM
+- **Virtualization:** Oracle VirtualBox 7.0
+- **Guest VM:** Security Onion 2.4 (ISO install)
+- **Resources:** 4 vCPU, 8 GB RAM, 100 GB disk
+- **Networking:**  
+  - Adapter 1: Bridged Adapter (to capture local network traffic)  
+  - Adapter 2: Internal Network (lab segmentation)
+
+This setup simulates a small SOC environment and provides visibility into network events, alerts, and suspicious activity.
+
+---
+
 ## 1. Login Page  
 ![Login Screenshot](screenshots/login.png)  
 - Shows successful setup and access to the SOC web console.  
@@ -41,8 +54,11 @@ This project demonstrates my hands-on experience setting up and using **Security
 ---
 
 ## 🔑 Key Takeaways
-
 - Installed and configured Security Onion from scratch.
 - Performed **alert → expand → hunt → verify** workflow.
 - Investigated Zbot malware alert and extracted indicators (IP, ASN, country).
 - Developed SOC analyst skills: triage, investigation, and documentation.
+- Built a virtualized SOC environment using Oracle VirtualBox for hands-on practice.
+
+---
+
